@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Survey Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #000000;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        padding-right: 50px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+      h1 {
+        text-align: center;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input[type="text"],
+      input[type="tel"],
+      input[type="email"],
+      input[type="date"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      input[type="checkbox"],
+      input[type="radio"] {
+        margin-right: 5px;
+      }
+      input[type="submit"],
+      input[type="reset"] {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover,
+      input[type="reset"]:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Text boxes for first name, last name, street address, city, state, zip, telephone number, e-mail, and
+date of survey, which are required fields.  -->
+    <div class="container">
+      <h1>Student Survey Form</h1>
+      <form>
+        <h4>First Name <span style="color: rgb(237, 84, 84)">*</span></h4>
+        <input
+          type="text"
+          placeholder="Enter your first name"
+          name="firstname"
+          id="firstname"
+          required
+          autofocus
+        />
+        <h4>Last Name <span style="color: rgb(237, 84, 84)">*</span></h4>
+        <input
+          type="text"
+          placeholder="Enter your Last name"
+          name="lastname"
+          id="lastname"
+          required
+          autofocus
+        />
+      </form>
+      <form>
+        <h4>Address <span style="color: rgb(237, 84, 84)">*</span></h4>
+        <input
+          type="text"
+          placeholder="Enter your street "
+          name="street"
+          id="street"
+          required
+          autofocus
+        />
+        <input
+          type="text"
+          placeholder="Enter your city "
+          name="city"
+          id="city"
+          required
+          autofocus
+        />
+        <input
+          type="text"
+          placeholder="Enter your state "
+          name="state"
+          id="state"
+          required
+          autofocus
+        />
+        <input
+          type="text"
+          placeholder="Enter your Zip code "
+          name="Zip"
+          id="Zip"
+          required
+          autofocus
+        />
+      </form>
+      <form>
+        <h4>Mobile Number <span style="color: rgb(237, 84, 84)">*</span></h4>
+        <div>
+          <input
+            type="tel"
+            class="form-control"
+            id="number"
+            name="number"
+            required
+            placeholder="Mobile Number"
+            autocomplete="on"
+          />
+        </div>
+      </form>
+      <form>
+        <h4>Email-ID <span style="color: rgb(237, 84, 84)">*</span></h4>
+        <div class="mb-3">
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            required
+            placeholder="Email Address"
+            autocomplete="on"
+          />
+        </div>
+      </form>
+      <form>
+        <h4>
+          Date of Survey
+          <span style="color: rgb(237, 84, 84)">*</span>
+        </h4>
+        <div class="mb-3">
+          <input
+            type="date"
+            class="form-control"
+            id="visit-date"
+            name="visit-date"
+            required
+            placeholder="Date of Campus Visit"
+          />
+        </div>
+      </form>
+      <form>
+        <h4> What did you liked most about the campus ?</h4>
+        <label>
+            <input type="checkbox" name="input"> Students</input>
+        </label>
+        <label>
+            <input type="checkbox" name="input"> location</input>
+        </label>
+        <label>
+            <input type="checkbox" name="input"> campus</input>
+        </label>
+        <label>
+            <input type="checkbox" name="input"> atmosphere</input>
+        </label>
+        <label>
+            <input type="checkbox" name="input"> dorm rooms</input>
+        </label>
+        <label>
+            <input type="checkbox" name="input"> Sports</input>
+        </label>
+
+      </form>
+
+      <form>
+        <h4> How did you became interested in the
+            university ?</h4>
+        <label>
+            <input type="radio" name="input"> Friends</input>
+        </label>
+        <label>
+            <input type="radio" name="input"> Television</input>
+        </label>
+        <label>
+            <input type="radio" name="input"> Internet</input>
+        </label>
+        <label>
+            <input type="radio" name="input"> Others</input>
+        </label>
+      </form>
+      <form>
+        <h4>Likelihood of you recommending this school </h4>
+        <select name="dropdown" id="recommend">
+            <option value="Very Likely">Very Likely</option>
+            <option value="Likely">Likely</option>
+            <option value="Unlikely">Unlikely</option>
+        </select>
+      </form>
+      <form>
+        <h4>Raffle</h4>
+        <input type="text" placeholder="enter at least ten comma separated numbers ranging from 1 through 100">
+      </form>
+
+      <form>
+        <h4>Additional Comments</h4>
+        <textarea></textarea>
+      </form>
+      <button type="submit" value="submit">Submit</button> <button type="Cancel" value="Cancel">Cancel</button>
+    </div>
+  </body>
+</html>
